@@ -23,7 +23,7 @@
 		FFE2220429C6442800B3715F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFE2220629C6442900B3715F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFE2220929C6442900B3715F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FFE2220B29C6442900B3715F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFE2220B29C6442900B3715F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Navigation Controller Example/Supporting Files/Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,55 @@
 		FFE221FC29C6442800B3715F /* Navigation Controller Example */ = {
 			isa = PBXGroup;
 			children = (
+				FFE2221129C644E200B3715F /* Supporting Files */,
+				FFE2221329C646E400B3715F /* Screens */,
+			);
+			path = "Navigation Controller Example";
+			sourceTree = "<group>";
+		};
+		FFE2221129C644E200B3715F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				FFE221FD29C6442800B3715F /* AppDelegate.swift */,
 				FFE221FF29C6442800B3715F /* SceneDelegate.swift */,
-				FFE2220129C6442800B3715F /* ViewController.swift */,
-				FFE2220329C6442800B3715F /* Main.storyboard */,
 				FFE2220629C6442900B3715F /* Assets.xcassets */,
 				FFE2220829C6442900B3715F /* LaunchScreen.storyboard */,
 				FFE2220B29C6442900B3715F /* Info.plist */,
 			);
-			path = "Navigation Controller Example";
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFE2221329C646E400B3715F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FFE2221429C6470100B3715F /* Main */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FFE2221429C6470100B3715F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FFE2221529C6470D00B3715F /* Controller */,
+				FFE2221629C6472100B3715F /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FFE2221529C6470D00B3715F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FFE2220129C6442800B3715F /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FFE2221629C6472100B3715F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFE2220329C6442800B3715F /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +328,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Navigation Controller Example/Info.plist";
+				INFOPLIST_FILE = "Navigation Controller Example/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -315,7 +355,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Navigation Controller Example/Info.plist";
+				INFOPLIST_FILE = "Navigation Controller Example/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
